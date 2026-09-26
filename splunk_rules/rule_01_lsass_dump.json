@@ -1,7 +1,0 @@
-{
-  "name": "SOC - LSASS Memory Dumping Detection",
-  "search": "index=windows EventCode=10 TargetImage=\"*lsass.exe\" (GrantedAccess=\"0x1010\" OR GrantedAccess=\"0x1f0fff\")",
-  "cron_schedule": "*/5 * * * *",
-  "is_scheduled": 1,
-  "description": "LSASS yaddaşının oxunması cəhdini aşkar edir (Mimikatz hücumları)."
-}
