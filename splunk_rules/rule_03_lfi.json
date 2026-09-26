@@ -1,7 +1,0 @@
-{
-  "name": "OWASP A01 - Path Traversal LFI Attempt",
-  "search": "index=web_logs (uri=\"*../*\" OR uri=\"*..%2f*\" OR uri=\"*..%5c*\" OR uri=\"*/etc/passwd*\" OR uri=\"*win.ini*\") | stats count by src_ip, uri",
-  "cron_schedule": "*/5 * * * *",
-  "is_scheduled": 1,
-  "description": "Fayl sistemində icazəsiz hərəkət (Directory Traversal) və Local File Inclusion (LFI) hücumlarını tutur."
-}

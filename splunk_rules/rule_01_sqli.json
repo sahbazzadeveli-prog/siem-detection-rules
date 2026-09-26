@@ -1,7 +1,0 @@
-{
-  "name": "OWASP A03 - SQL Injection Attack Attempt",
-  "search": "index=web_logs (uri=\"*SELECT*\" OR uri=\"*UNION*\" OR uri=\"*%27*\" OR uri=\"*OR%201%3D1*\" OR uri=\"*INFORMATION_SCHEMA*\") | stats count by src_ip, uri, status",
-  "cron_schedule": "*/5 * * * *",
-  "is_scheduled": 1,
-  "description": "Veb sorğularında SQL Injection hücumlarını və verilənlər bazası sızdırma cəhdlərini aşkar edir."
-}

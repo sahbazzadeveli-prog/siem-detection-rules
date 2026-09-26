@@ -1,7 +1,0 @@
-{
-  "name": "OWASP A03 - Command Injection Attempt",
-  "search": "index=web_logs (uri=\"*%7C*\" OR uri=\"*%26%26*\" OR uri=\"*;cat%20*\" OR uri=\"*;whoami*\" OR uri=\"*&whoami*\") | stats count by src_ip, uri, status",
-  "cron_schedule": "*/5 * * * *",
-  "is_scheduled": 1,
-  "description": "OS əmrlərinin veb sorğu parametrləri vasitəsilə ötürülərək distant kod icrası cəhdini aşkar edir."
-}
